@@ -11,4 +11,14 @@ module.exports = withBundleAnalyzer({
   // So, the source code is "basePath-ready".
   // You can remove `basePath` if you don't need it.
   reactStrictMode: true,
+  // Using SVG to render the website logo
+  // >>> https://frontend-digest.com/how-to-import-svgs-into-nextjs-8ec6100e613f
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ['@svgr/webpack'],
+    });
+
+    return config;
+  },
 });

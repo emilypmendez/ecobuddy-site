@@ -4,4 +4,5 @@ export const AppConfig = {
   description:
     'EcoBuddy website built with Nextjs Boilerplate and Tailwind CSS',
   locale: 'en',
+  logo: '',
 };
