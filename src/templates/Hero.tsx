@@ -32,7 +32,7 @@ const Hero = () => {
   };
 
   useEffect(() => {
-    console.log(user);
+    // console.log(user);
     // logout();
   }, [user]);
 
