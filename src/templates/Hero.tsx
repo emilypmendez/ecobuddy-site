@@ -3,20 +3,27 @@
 import { useEffect } from 'react';
 
 // Firebase
-import { signInWithRedirect, GoogleAuthProvider, signOut } from 'firebase/auth';
+import {
+  signInWithRedirect,
+  GoogleAuthProvider,
+  signOut,
+  getAuth,
+} from 'firebase/auth';
 import Link from 'next/link';
 import { useAuthState } from 'react-firebase-hooks/auth';
 
 // Page
+import { firebaseApp } from '../../firebase';
 import { Background } from '../background/Background';
 import { Button } from '../button/Button';
-import { auth } from '../config/firebase';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
 
+// component starts here
 const Hero = () => {
+  const auth = getAuth(firebaseApp);
   const [user] = useAuthState(auth);
 
   const googleAuthProvider = new GoogleAuthProvider();
@@ -97,7 +104,7 @@ const Hero = () => {
           }
           description="The easiest way to build your career in seconds."
           button={
-            <Link href="/app/signin">
+            <Link href="https://emily103.typeform.com/to/m3VMtvKD">
               <a>
                 <Button xl>Get Access Now</Button>
               </a>

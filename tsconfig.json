@@ -11,7 +11,7 @@
     "strictNullChecks": true,
     "noUncheckedIndexedAccess": true,
 
-    "noImplicitAny": true,
+    "noImplicitAny": false, // https://github.com/dalenguyen/firebase-functions-helper/issues/9
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noUnusedLocals": true,
@@ -44,5 +44,5 @@
     "@typescript-eslint/no-shadow": ["error", { "ignoreTypeValueShadow": true }]
   },
   "exclude": ["./out/**/*", "./node_modules/**/*"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "firebase.config"]
 }

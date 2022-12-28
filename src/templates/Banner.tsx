@@ -10,7 +10,7 @@ const Banner = () => (
       title="Ready to launch your career?"
       subtitle="Start your journey today."
       button={
-        <Link href="https://ecobuddy.com/app/signin/">
+        <Link href="https://emily103.typeform.com/to/m3VMtvKD">
           <a>
             <Button>Get Started</Button>
           </a>
